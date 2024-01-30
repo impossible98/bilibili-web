@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: 7e366e89-51bd-4178-b4f6-5802e37857bc
+    env: node
+    branch: master
+    buildCommand: yarn --frozen-lockfile install && yarn run build
+    startCommand: node .output/server/index.mjs
